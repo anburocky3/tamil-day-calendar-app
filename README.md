@@ -1,10 +1,12 @@
-# Your App Title
+# Tamil Day Calendar App
 
-Write app description in detail!
+Simple calendar listing app
 
 ## Screenshots
 
-> Live:
+> Yet to be updated!
+
+> Live: [https://anburocky3.github.io/tamil-day-calendar-app/](https://anburocky3.github.io/tamil-day-calendar-app/)
 
 #### LICENSE: MIT
 

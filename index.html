@@ -3,14 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Tamil day calendar app</title>
 
     <!-- TailwindCSS -->
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
-  <body>
-    <!-- Write your HTML here -->
-    <div id="app" class="text-3xl font-bold">Hello Vite HTML & Tailwind!</div>
+  <body class="bg-slate-900">
+    <form id="dateForm" class="p-10 rounded m-20 bg-slate-600">
+      <label for="date" class="text-white block text-xl font-semibold"
+        >Select Date</label
+      >
+      <input
+        type="date"
+        id="date"
+        placeholder="Enter your Date"
+        class="px-3 py-1 rounded bg-slate-800 text-white outline-none mt-3"
+      />
+      <button
+        class="px-4 py-2 rounded bg-blue-500 hover:bg-blue-600 text-white"
+      >
+        Get calendar
+      </button>
+    </form>
+
+    <div class="m-20 bg-slate-600 p-5 rounded">
+      <img
+        src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif"
+        alt="Loading"
+        class="w-full"
+        id="dayImg"
+      />
+    </div>
+
+    <div class="text-gray-300 text-center mb-10">
+      All images are from
+      <a href="https://www.tamildailycalendar.com/"
+        >https://www.tamildailycalendar.com</a
+      >
+      they deserve everything!
+    </div>
+
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
