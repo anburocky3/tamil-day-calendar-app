@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body class="bg-slate-900">
-    <form id="dateForm" class="p-10 rounded m-20 bg-slate-600">
+    <h4
+      class="text-white text-xl sm:text-4xl font-semibold m-5 sm:m-20 text-center"
+    >
+      Tamil Day Calendar
+    </h4>
+    <form id="dateForm" class="p-5 sm:p-10 rounded m-5 sm:m-20 bg-slate-600">
       <label for="date" class="text-white block text-xl font-semibold"
         >Select Date</label
       >
@@ -17,23 +22,18 @@
         type="date"
         id="date"
         placeholder="Enter your Date"
-        class="px-3 py-1 rounded bg-slate-800 text-white outline-none mt-3"
+        class="px-3 py-1 rounded bg-slate-800 text-white outline-none mt-3 w-full"
         min="2023-01-01"
         max="2024-12-31"
         required
       />
-      <button
-        class="px-4 py-2 rounded bg-blue-500 hover:bg-blue-600 text-white"
-      >
-        Get calendar
-      </button>
     </form>
 
-    <div class="m-20 bg-slate-600 p-5 rounded">
+    <div class="m-5 sm:m-20 bg-slate-600 p-3 sm:p-5 rounded">
       <img
         src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif"
         alt="Loading"
-        class="w-full"
+        class="w-full rounded"
         id="dayImg"
       />
     </div>

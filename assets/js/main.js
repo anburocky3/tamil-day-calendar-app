@@ -1,10 +1,10 @@
-const dateFormEl = document.querySelector("#dateForm");
+const dateEl = document.querySelector("#date");
 const dayContainerEl = document.querySelector("#dayImg");
 
-dateFormEl.addEventListener("submit", (e) => {
+dateEl.addEventListener("change", (e) => {
   e.preventDefault();
 
-  const inputDate = e.target[0].value;
+  const inputDate = e.target.value;
 
   //   console.log(inputDate);
   processDate(inputDate);
