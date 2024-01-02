@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  // base: '/YOUR_BASE/'
+  base: "/tamil-day-calendar-app/",
   //   build: {
   //     rollupOptions: {
   //       input: {
