@@ -1,20 +1,31 @@
 const dateFormEl = document.querySelector("#dateForm");
 const dayContainerEl = document.querySelector("#dayImg");
 
-const myDate = new Date();
+dateFormEl.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-// https://www.tamildailycalendar.com/2024/2012024.jpg
-const result = myDate.toLocaleDateString("en-IN", {
-  year: "numeric",
-  month: "2-digit",
-  day: "numeric",
+  const inputDate = e.target[0].value;
+
+  //   console.log(inputDate);
+  processDate(inputDate);
 });
 
-const formatedDate = result.replaceAll("/", "");
-const formatedUrl = `https://www.tamildailycalendar.com/${myDate.getFullYear()}/${formatedDate}.jpg`;
+function processDate(date) {
+  const myDate = date ? new Date(date) : new Date();
 
-dayContainerEl.src = formatedUrl;
-dayContainerEl.alt = formatedDate;
-dayContainerEl.classList.remove("hidden");
+  // https://www.tamildailycalendar.com/2024/2012024.jpg
+  const result = myDate.toLocaleDateString("en-IN", {
+    year: "numeric",
+    month: "2-digit",
+    day: "numeric",
+  });
 
-console.log(formatedUrl);
+  const formatedDate = result.replaceAll("/", "");
+  const formatedUrl = `https://www.tamildailycalendar.com/${myDate.getFullYear()}/${formatedDate}.jpg`;
+
+  dayContainerEl.src = formatedUrl;
+  dayContainerEl.alt = formatedDate;
+  dayContainerEl.classList.remove("hidden");
+}
+
+processDate();
