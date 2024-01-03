@@ -4,7 +4,9 @@ Simple calendar listing app
 
 ## Screenshots
 
-> Yet to be updated!
+### Tamil Day Calendar App UI in mobile
+
+ ![Tamil Day Calendar App UI ](/assets/images/mobile-view.png)
 
 > Live: [https://anburocky3.github.io/tamil-day-calendar-app/](https://anburocky3.github.io/tamil-day-calendar-app/)
 
