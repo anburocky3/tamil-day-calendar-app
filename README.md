@@ -6,7 +6,7 @@ Simple calendar listing app
 
 ### Tamil Day Calendar App UI in mobile
 
-    ![Tamil Day Calendar App UI in mobile](/assets/screenshots/mobile-view.png)
+ ![Tamil Day Calendar App UI in laptop](/assets/screenshots/mobile-view.png)
 
  ### Tamil Day Calendar App UI in laptop
 
